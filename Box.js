@@ -24,6 +24,12 @@ class Box {
     rect(0, 0, this.width, this.height);
     pop();
   }
+    else {
+    World.remove(world, this.body);
+    push();
+    this.visiblity = this.visibility - 5;
+    pop();
+    }
 
   }
 }
